@@ -1,0 +1,34 @@
+@use './index' as *;
+
+.nav-bar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 6vh;
+    margin-left: 35px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    .logo{
+        flex-basis: 1;
+    }
+    .nav-btn{
+        flex-basis: 1;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        margin-right: 35px;
+        button{
+            margin-left: 30px;
+            border: none;
+            background: transparent;
+            color: white;
+            font-size: 1.2rem;
+            font-family: $font-family;
+            cursor: pointer;
+            
+        }
+    }
+}

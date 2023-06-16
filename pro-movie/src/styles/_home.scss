@@ -1,0 +1,58 @@
+@use "./index" as *;
+
+.home {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.swiper-slide {
+  width: 250px;
+}
+.title-btn-popular {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .control-title{
+    margin-left: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn-list {
+    border: none;
+    background-color: transparent;
+    color: $txt-color;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .btn-list.deactive {
+    background-color: transparent;
+    color: transparent;
+    pointer-events: none;
+  }
+}
+.btn-list-control{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  background-color: $bg-sec;
+  color: $txt-color;
+  cursor: pointer;
+  font-size: 25px;
+}
+.control-swiper{
+  margin-right: 35px;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}

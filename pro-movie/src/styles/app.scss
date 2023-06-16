@@ -1,0 +1,41 @@
+@use './index' as *;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: $body-bg;
+    color: $txt-color;
+}
+html{
+    font-size: 100%;
+    @include tablet{
+        font-size: 80%;
+    }
+    @include mobile{
+        font-size: 60%;
+    }
+}
+
+button,input{
+    outline: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import './popularList';
+@import './home';
+@import './nav';
+@import './detail';
