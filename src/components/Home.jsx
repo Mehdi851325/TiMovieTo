@@ -63,9 +63,11 @@ console.log(popularTv);
     return (
       <div className="home">
         <NavBar setList={setList} setSelectedList={setSelectedList}/>
+        <div className="detail-home">
         {selectedList === 0 && <Detail heroMovie={popular} gameId={gameId} />}
         {selectedList === 1 && <Detail heroMovie={upComing} gameId={gameId} />}
         {selectedList === 2 && <Detail heroMovie={topRating} gameId={gameId} />}
+        </div>
         <div className="title-btn-popular">
           <div className="control-title">
             {selectedList > 0 ? (
