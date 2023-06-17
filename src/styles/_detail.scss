@@ -24,13 +24,6 @@
     left: 0;
     background-image: linear-gradient(to top, $body-bg, rgba(black, 0));
   }
-  // margin-left: 35px;
-  // img{
-  //     width: 800px;
-  //     object-fit: cover;
-  //     border-radius: 30px;
-  //     margin-bottom: 10px;
-  // }
 }
 .detail-main {
   display: flex;
@@ -64,5 +57,8 @@
   img {
     width: 210px;
     border-radius: $border-ra;
+    @include mobile{
+      display: none;
+    }
   }
 }
