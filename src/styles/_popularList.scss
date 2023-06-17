@@ -12,6 +12,9 @@
     width: 150px;
     box-shadow: $box-sh;
     border-radius: $border-ra;
+    @include mobile{
+      width: 120px;
+    }
   }
   .container-box {
     margin-top: 10px;

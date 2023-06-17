@@ -14,7 +14,7 @@
 .swiper-slide {
   width: 250px;
   @include mobile{
-    width: 220px;
+    width: 190px;
   }
 }
 .title-btn-popular {
@@ -27,6 +27,7 @@
   }
   .control-title{
     margin-left: 35px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,4 +71,7 @@
 }
 .detail-home{
   min-height: 65vh;
+  @include mobile{
+    min-height: 60vh;
+  }
 }
