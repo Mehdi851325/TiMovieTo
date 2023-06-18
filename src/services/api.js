@@ -1,5 +1,5 @@
 const base_url = "https://api.themoviedb.org/3/";
-const api_key = "2ee543f3468420585e8b13c3e8a84d34";
+const api_key = '2ee543f3468420585e8b13c3e8a84d34';
 
 export const movieImage = {
   imageOriginal: (imagePath) =>`https://image.tmdb.org/t/p/original${imagePath}`,

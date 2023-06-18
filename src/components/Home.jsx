@@ -53,7 +53,6 @@ const Home = () => {
   const prevListHandler = () => {
     setSelectedList(selectedList - 1);
   };
-console.log(popularTv);
   useEffect(() => {
     dispatch(loadMovie());
     dispatch(loadTv());
