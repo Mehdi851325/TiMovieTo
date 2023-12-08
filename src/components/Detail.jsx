@@ -7,6 +7,8 @@ import { loadDetail } from "../action/detailAction";
 import { useSelector } from "react-redux";
 //motion
 import { AnimatePresence, motion } from "framer-motion";
+//svg
+import imdb from "../assets/imdb.svg";
 
 const Detail = ({ heroMovie, gameId }) => {
   const dispatch = useDispatch();
@@ -62,8 +64,9 @@ const Detail = ({ heroMovie, gameId }) => {
                   : null}
               </h3>
             </div>
-            <div>
-              <h3>Imdb: {heroMovie[0].vote_average}</h3>
+            <div className="detail-vote">
+              <img src={imdb} alt={imdb}/>
+              <h3>:{" "}{heroMovie[0].vote_average}</h3>
             </div>
           </div>
         </div>
@@ -114,8 +117,9 @@ const Detail = ({ heroMovie, gameId }) => {
                   : null}
               </h3>
             </div>
-            <div>
-              <h3>Imdb: {switchGame[0].vote_average}</h3>
+            <div className="detail-vote">
+              <img src={imdb} alt={imdb}/>
+              <h3>:{" "}{switchGame[0].vote_average}</h3>
             </div>
           </div>
         </div>
